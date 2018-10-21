@@ -1,0 +1,28 @@
+def feature_normalize(train, valid, test):
+    tmp = train
+    mean, std = tmp.mean(axis = 0), tmp.std(axis = 0)
+    train = (train - mean) / std
+    valid = (valid - mean) / std
+    test = (test - mean) / std
+    return train, valid, test
+
+X_train, X_valid, X_test = feature_normalize(X_train, X_valid, X_test)
+
+------------------------------------------------------------
+74510.39781(рzipcode眖把计い埃)
+
+71775.54538(sale month, day, view眖把计い埃)
+
+74528.22465(рsale month, day穝把计)
+
+72130.47903(285Ω秸俱–糷neuron计)
+
+73108.89094(295Ω)
+
+72637.22391(200Ω)
+
+78870.86740(79Ω)
+
+72865.68335(100Ω)
+
+72366.43329(285Ω)
